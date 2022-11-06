@@ -4,9 +4,6 @@ import org.example.computer.Computer;
 import org.example.factories.AsusManufacturer;
 import org.example.factories.Company;
 import org.example.factories.MsiManufacturer;
-import org.example.products.Product;
-
-import java.util.List;
 
 /**
  * Hello world!
@@ -17,7 +14,7 @@ public class App {
         Company msi  = new MsiManufacturer();
         Company asus = new AsusManufacturer();
 
-        Computer myBuild = new Computer(asus.createGpu(), msi.createMonitor());
+        Computer myBuild = new Computer(asus.createGpu(), msi.createMonitor(), asus.createMotherboard());
         myBuild.printBuild();
 
     }

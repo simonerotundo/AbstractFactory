@@ -1,9 +1,11 @@
 package org.example.factories;
 
-import org.example.products.Gpu;
-import org.example.products.Monitor;
-import org.example.products.MsiGpu;
-import org.example.products.MsiMonitor;
+import org.example.products.GPUs.Gpu;
+import org.example.products.Monitors.Monitor;
+import org.example.products.GPUs.MsiGpu;
+import org.example.products.Monitors.MsiMonitor;
+import org.example.products.Motherboards.Motherboard;
+import org.example.products.Motherboards.MsiMotherboard;
 
 public class MsiManufacturer extends Company {
 
@@ -15,6 +17,11 @@ public class MsiManufacturer extends Company {
     @Override
     public Monitor createMonitor() {
         return new MsiMonitor();
+    }
+
+    @Override
+    public Motherboard createMotherboard() {
+        return new MsiMotherboard();
     }
 
 }

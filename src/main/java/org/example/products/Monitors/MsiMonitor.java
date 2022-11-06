@@ -1,4 +1,4 @@
-package org.example.products;
+package org.example.products.Monitors;
 
 public class MsiMonitor implements Monitor {
 

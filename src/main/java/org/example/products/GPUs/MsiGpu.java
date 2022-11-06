@@ -1,4 +1,4 @@
-package org.example.products;
+package org.example.products.GPUs;
 
 public class MsiGpu implements Gpu {
 
