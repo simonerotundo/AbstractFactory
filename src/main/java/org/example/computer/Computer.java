@@ -4,8 +4,8 @@ import org.example.products.Gpu;
 import org.example.products.Monitor;
 
 public class Computer {
-    private Gpu gpu;
-    private Monitor monitor;
+    private final Gpu gpu;
+    private final Monitor monitor;
 
 
     public Computer(Gpu gpu, Monitor monitor) {
