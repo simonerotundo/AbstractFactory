@@ -17,8 +17,6 @@ public class App {
         Company msi  = new MsiManufacturer();
         Company asus = new AsusManufacturer();
 
-
-        asus.createGpu().assemble();
         Computer myBuild = new Computer(asus.createGpu(), msi.createMonitor());
         myBuild.printBuild();
 

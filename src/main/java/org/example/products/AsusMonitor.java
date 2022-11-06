@@ -1,6 +1,9 @@
 package org.example.products;
 
 public class AsusMonitor implements Monitor {
+
+    String name = "Asus VG248QE";
+
     @Override
     public void assemble() {
         System.out.println("Assembling Asus monitor");
@@ -8,6 +11,6 @@ public class AsusMonitor implements Monitor {
 
     @Override
     public String toString() {
-        return "Asus Monitor";
+        return name;
     }
 }

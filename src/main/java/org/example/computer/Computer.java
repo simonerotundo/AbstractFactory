@@ -13,18 +13,8 @@ public class Computer {
         this.monitor = monitor;
     }
 
-    public Gpu getGpu() {
-        return gpu;
-    }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
     public void printBuild() {
-        System.out.println("Your build is: ");
-        gpu.toString();
-        monitor.toString();
+        System.out.println("Your build is: " + gpu.toString() + " and " + monitor.toString());
     }
 
 }

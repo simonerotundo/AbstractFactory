@@ -1,6 +1,9 @@
 package org.example.products;
 
 public class MsiMonitor implements Monitor {
+
+    String name = "MSI Optix MAG272CQR";
+
     @Override
     public void assemble() {
         System.out.println("Assembling Msi monitor");
@@ -8,6 +11,7 @@ public class MsiMonitor implements Monitor {
 
     @Override
     public String toString() {
-        return "Msi Monitor";
+        return name;
     }
+
 }

@@ -1,5 +1,3 @@
 package org.example.products;
 
-public interface Monitor extends Product {
-
-}
+public interface Monitor extends Product {}
